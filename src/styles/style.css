@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+   
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+ }
+
+.skip-link:focus {
+    top: 0;
+ }
+
+  /*
+    AppBar
+  */
+   
+  .app-bar {
+    padding: 8px 16px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__brand h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    user-select: none;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: grey;
+    overflow: hidden;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__navigation.open {
+    left: 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: black;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .hero { display: flex;
+    background-image:
+      url('hero-image_2.webp');
+    background-position: center;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: black;
+
+} 
+
+.hero__inner {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.hero__title {
+    color: white;
+    background-color: grey;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero__tagline {
+    color: white;
+    background-color: grey;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+   
+  /*
+    Main Content
+  */
+   
+  main {
+    padding: 32px;
+    flex: 1;
+    background-color:black;
+    color: white;
+  }
+   
+  .content {
+    margin: 0 auto;
+    min-height: 100%;
+    color:white;
+    
+  }
+   
+  .content .content__heading {
+    font-weight: normal;
+    color: white;
+    
+  }
+   
+   
+  /*
+    Movies
+  */
+   
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #list-rest {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+   
+   
+  /*
+    Restaurants Item
+  */
+   
+  .restaurants-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: grey;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurants-item__header {
+    position: relative;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurants-item .restaurants-item__header .restaurants-item__header__poster {
+    width: 100%;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurants-item .restaurants-item__header .restaurants-item__header__rating {
+    position: absolute;
+    padding: 8px;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurants-item .restaurants-item__header {
+    margin-left: 10px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurants-item .restaurants-item__content {
+    padding: 16px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+  }
+   
+  .restaurants-item .restaurants-item__content h3 {
+    margin: 0 0 10px 0;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+  }
+   
+  .restaurants-item .restaurants-item__content h3 a {
+    color: white;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+  }
+   
+  .restaurants-item .restaurants-item__content p {
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+      
+  /*
+    Restaurants
+  */
+   
+  .restaurant {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+    background-color: black;
+    color: white; 
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurant .restaurant__poster {
+    width: 100%;
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .restaurant .restaurant__description  {
+    margin: 8px 0;
+    text-align: justify;
+    color: white;
+    background-color: black;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /*
+       Like
+    */
+    .like {
+      font-size: 18px;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background-color: #db0000;
+      color: white;
+      border: 0;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+   
+
+  /*
+    Footer
+  */
+   
+  footer {
+    padding: 16px;
+    background-color: grey;
+  }
+   
+  footer p {
+    text-align: center;
+    color: white;
+  }
+   
+  
+
+    
